@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="currency.currencyCalculaor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:currency"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name="ConversionCalcText" HorizontalAlignment="Left" Height="77" Margin="375,54,0,0" Text="Currency Conversion Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Width="597" FontSize="36" FontWeight="Bold"/>
+        <TextBlock x:Name="AmountText" HorizontalAlignment="Left" Height="58" Margin="177,139,0,0" Text="Amount :" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="36"/>
+        <TextBox x:Name="AmountTextBox" HorizontalAlignment="Left" Height="71" Margin="63,230,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" FontSize="36"/>
+        <TextBlock x:Name="FromText" HorizontalAlignment="Left" Height="58" Margin="620,139,0,0" Text="From :" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" FontSize="36"/>
+        <TextBlock x:Name="FromText_Copy" HorizontalAlignment="Left" Height="58" Margin="1067,139,0,0" Text="To :" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" FontSize="36" RenderTransformOrigin="1.062,0.632"/>
+        <ComboBox x:Name="FromComboBox" Height="66" Margin="483,233,0,0" Width="373" PlaceholderText="Select Currency" FontSize="36">
+            <ComboBoxItem Content="US Dollar" FontSize="36"/>
+            <ComboBoxItem Content="Euro" FontSize="36"/>
+            <ComboBoxItem Content="British" FontSize="36"/>
+            <ComboBoxItem Content="Indian Rupee" FontSize="36"/>
+        </ComboBox>
+        <ComboBox x:Name="ToComboBox" Height="66" Margin="897,227,0,0" Width="373" FontSize="36" PlaceholderText="Select Currency">
+            <ComboBoxItem Content="US Dollar" FontSize="36"/>
+            <ComboBoxItem Content="Euro" FontSize="36"/>
+            <ComboBoxItem Content="British" FontSize="36"/>
+            <ComboBoxItem Content="Indian Rupee" FontSize="36"/>
+        </ComboBox>
+        <Button x:Name="ConvertButton" Content="Convert" Height="63" Margin="0,386,0,0" VerticalAlignment="Top" Width="233" FontSize="36" Click="ConvertButton_Click" HorizontalAlignment="Center" RenderTransformOrigin="0.486,-0.173" />
+        <TextBlock x:Name="ConversionTextBox" HorizontalAlignment="Left" Height="186" Margin="63,499,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="405" FontSize="20"/>
+
+    </Grid>
+</Page>
