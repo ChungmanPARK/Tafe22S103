@@ -13,6 +13,7 @@
         <Button x:Name="mathsCalculatorButton" Content="Maths Calculator"   Margin="462,151,0,0" VerticalAlignment="Top" FontSize="40" Width="400" Click="mathsCalculatorButton_Click" />
         <Button x:Name="mortgageButton" Content="MortGage Calculator" Margin="462,293,0,0" VerticalAlignment="Top" FontSize="40" Width="400" Click="mortgageButton_Click"/>
         <Button x:Name="currencyButton" Content="Currency Calculator" Margin="462,427,0,0" FontSize="40" Width="400" VerticalAlignment="Top" Click="currencyButton_Click"/>
+	<Button x:Name="tripCalculatorButton" Content="Trip Calculator" Margin = "462,600,0,0" FontSize="40" Width= "200" VerticalAlugnment="Top"/>    
         <Button  x:Name="exitButon" Content="Exit" Margin="462,560,0,0" VerticalAlignment="Top" FontSize="40" Width="400" Click="exitButon_Click"/>
 		<Image Source="Image/abacus.PNG" Margin="992,10,-89,575"/>
 
