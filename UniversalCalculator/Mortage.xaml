@@ -45,7 +45,7 @@
             </StackPanel>
 
             <StackPanel>
-                <Button x:Name="exitButton" Content="Exit" Width="200" Height="60" HorizontalAlignment="Center" Margin="10" FontSize="40"/>
+                <Button x:Name="exitButton" Content="Exit" Width="200" Height="60" HorizontalAlignment="Center" Margin="10" FontSize="40" Click="exitButton_Click"/>
             </StackPanel>
 
         </StackPanel>
